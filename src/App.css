@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.headerTitle {
+  color: red;
+  font-size: 10rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+}

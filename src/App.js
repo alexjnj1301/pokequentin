@@ -1,32 +1,21 @@
+import React, { useState } from "react";
 import logo from './denis.png';
-import escape from './escape.jpeg';
 import './App.css';
+import Header from './components/atoms/Header/Header';
 
 function App() {
+  const header = "Bonjour je suis un Header";
+  const [bannerData, setBannerData] = useState(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={escape} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title={header} setBannerData={setBannerData}/>
+      {bannerData}
       <body>
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} alt="logo" />
+        <div className='buttonGroup'>
+          caca
+        </div>
       </body>
     </div>
   );

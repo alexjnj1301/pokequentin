@@ -50,3 +50,11 @@
   align-content: center;
   width: 50%;
 }
+
+.day{
+  background-color: #61dafb;
+}
+
+.night{
+  background-color: #282c34;
+}
